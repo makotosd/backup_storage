@@ -2,11 +2,11 @@
 #
 #
 # fstab
-#UUID="CEF8630AF862F05F" /mnt/HD-LXU3  ntfs-3g defaults,nofail 0       0
-#UUID="023CFDD53CFDC427" /mnt/HD-LCU3  ntfs-3g defaults,nofail 0       0
-#UUID="7C7A5CA47A5C5D48" /mnt/HD-LBFU2 ntfs-3g defaults,nofail 0       0
-#UUID="8C00633E00632F00" /mnt/HD-CLU2  ntfs-3g defaults,nofail 0       0
-#UUID="0C444D68444D559C" /mnt/IO-DATA  ntfs-3g defaults,nofail 0       0
+#UUID="CEF8630AF862F05F" /mnt/HD-LXU3  ntfs-3g defaults,noauto,nofail 0       0
+#UUID="023CFDD53CFDC427" /mnt/HD-LCU3  ntfs-3g defaults,noauto,nofail 0       0
+#UUID="7C7A5CA47A5C5D48" /mnt/HD-LBFU2 ntfs-3g defaults,noauto,nofail 0       0
+#UUID="8C00633E00632F00" /mnt/HD-CLU2  ntfs-3g defaults,noauto,nofail 0       0
+#UUID="0C444D68444D559C" /mnt/IO-DATA  ntfs-3g defaults,noauto,nofail 0       0
 
 # all log go to log file.
 logfilename=/home/pi/script/backup_storage/log.`date +"%Y%m%d"`
