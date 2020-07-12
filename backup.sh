@@ -41,9 +41,14 @@ function do_backup () {
   src=$1
   dst=$2
   echo "############################################"
-  echo "## src: $src"
-  echo "## dst: $dst"
+  echo ";; src: $src"
+  echo ";; dst: $dst"
   cmd="$RSYNC \"$src\" \"$dst\""
+  echo ";; cmd: $cmd"
+
+  if [ ! -d "$src" ] ; then echo "no src"; return; fi
+  if [ ! -d "$dst" ] ; then echo "no dst"; return; fi 
+
   eval ${cmd}
 }
 
