@@ -46,8 +46,8 @@ function do_backup () {
   cmd="$RSYNC \"$src\" \"$dst\""
   echo ";; cmd: $cmd"
 
-  if [ ! -d "$src" ] ; then echo "no src"; return; fi
-  if [ ! -d "$dst" ] ; then echo "no dst"; return; fi 
+  if [ ! -d "$src" ] ; then echo "ERROR: NO SRC. skip"; return; fi
+  if [ ! -d "$dst" ] ; then echo "ERROR: NO DST. skip"; return; fi 
 
   eval ${cmd}
 }
