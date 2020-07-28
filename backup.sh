@@ -5,8 +5,7 @@
 #UUID="CEF8630AF862F05F" /mnt/HD-LXU3  ntfs-3g defaults,nofail 0       0
 #UUID="023CFDD53CFDC427" /mnt/HD-LCU3  ntfs-3g defaults,nofail 0       0
 #UUID="7C7A5CA47A5C5D48" /mnt/HD-LBFU2 ntfs-3g defaults,noauto,nofail 0       0
-#UUID="8C00633E00632F00" /mnt/HD-CLU2  ntfs-3g defaults,noauto,nofail 0       0
-#UUID="0C444D68444D559C" /mnt/IO-DATA  ntfs-3g defaults,noauto,nofail 0       0
+#UUID="BE863C42863BF98B" /mnt/HD-BUF3T  ntfs-3g defaults,noauto,nofail 0       0
 
 # all log go to log file.
 logfilename=/home/pi/script/backup_storage/log.`date +"%Y%m%d"`
@@ -32,10 +31,10 @@ dst_pic="/mnt/HD-LCU3/backup/My Pictures/"
 dst_vid="/mnt/HD-LCU3/backup/My Video/"
 dst_M="/mnt/HD-LCU3/backup/Makoto/"
 dst_a="/mnt/HD-LCU3/backup/Ayaka/" 
-dst_dvd="/mnt/HD-CLU2/backup/DVD/"
-dst_dvd2="/mnt/HD-CLU2/backup/DVD2/"
-dst_mus="/mnt/HD-CLU2/backup/Music/"
-dst_mov="/mnt/IO-DATA/backup/MOV/"
+dst_dvd="/mnt/HD-BUF3T/backup/DVD/"
+dst_dvd2="/mnt/HD-BUF3T/backup/DVD2/"
+dst_mus="/mnt/HD-BUF3T/backup/Music/"
+dst_mov="/mnt/HD-BUF3T/backup/MOV/"
 
 function do_backup () {
   src=$1
@@ -61,3 +60,4 @@ do_backup "$src_dvd"  "$dst_dvd"
 do_backup "$src_dvd2" "$dst_dvd2"
 do_backup "$src_mus"  "$dst_mus"
 do_backup "$src_mov"  "$dst_mov"
+
